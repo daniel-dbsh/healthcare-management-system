@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Investments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Healthcare Investments and Hospital Stay Length</h1>
+
+    <h2>Add Investment</h2>
+    <form id="addInvestmentForm">
+        <input type="text" id="location" placeholder="Location" required>
+        <input type="text" id="time" placeholder="Time" required>
+        <input type="number" id="hospitalStay" placeholder="Hospital Stay" required>
+        <input type="number" id="mriUnits" placeholder="MRI Units" required>
+        <input type="number" id="ctScanners" placeholder="CT Scanners" required>
+        <input type="number" id="hospitalBeds" placeholder="Hospital Beds" required>
+        <button type="submit">Add Investment</button>
+    </form>
+
+    <h2>Update Investment</h2>
+    <form id="updateInvestmentForm">
+        <input type="text" id="updateId" placeholder="ID" required>
+        <input type="text" id="updateLocation" placeholder="Location" required>
+        <input type="text" id="updateTime" placeholder="Time" required>
+        <input type="number" id="updateHospitalStay" placeholder="Hospital Stay" required>
+        <input type="number" id="updateMriUnits" placeholder="MRI Units" required>
+        <input type="number" id="updateCtScanners" placeholder="CT Scanners" required>
+        <input type="number" id="updateHospitalBeds" placeholder="Hospital Beds" required>
+        <button type="submit">Update Investment</button>
+    </form>
+
+    <h2>Healthcare Investments and Hospital Stay Data</h2>
+    <table id="investmentsTable">
+        <thead>
+            <tr>
+                <th>Location</th>
+                <th>Time</th>
+                <th>Hospital Stay</th>
+                <th>MRI Units</th>
+                <th>CT Scanners</th>
+                <th>Hospital Beds</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be injected here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
